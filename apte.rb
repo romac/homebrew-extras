@@ -15,6 +15,6 @@ class Apte < Formula
   end
 
   test do
-    system "#{bin}/apte" "Example/example_1.txt"
+    system "#{bin}/apte"
   end
 end
