@@ -8,6 +8,8 @@ class Apte < Formula
   depends_on "ocaml" => :build
 
   def install
+    ENV.deparallelize
+
     system "make"
     bin.install "apte"
   end
