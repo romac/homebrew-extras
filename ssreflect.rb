@@ -41,13 +41,7 @@ class Ssreflect < Formula
   patch :DATA
 
   def install
-<<<<<<< Updated upstream
-    ENV["OCAMLPARAM"] = "safe-string=0,_" # OCaml 4.06.0 compat
-
-    resource("coq84").stage do
-=======
     resource("coq861").stage do
->>>>>>> Stashed changes
       system "./configure", "-prefix", libexec/"coq",
                             "-camlp5dir", Formula["camlp5"].opt_lib/"ocaml/camlp5",
                             "-coqide", "no",
