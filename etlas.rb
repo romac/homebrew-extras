@@ -9,6 +9,6 @@ class Etlas < Formula
   end
 
   test do
-    system "#{bin}/etlas"
+    system "#{bin}/etlas", "--version"
   end
 end
